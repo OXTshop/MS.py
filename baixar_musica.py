@@ -1,13 +1,16 @@
 import time
 import os
-import random
-import youtube_dl
+import  random
+import yt_dlp as youtube_dl
 from datetime import datetime
 import shutil
 
 data_e_hora_atuais = datetime.now()
 data_e_hora_em_texto = data_e_hora_atuais.strftime("%d/%m/%Y")
 
+
+
+input("INICIAR\nPRESS !ENTER")
 f = open("links.txt", 'r')
 banda = f.readlines()
 ia = 0
