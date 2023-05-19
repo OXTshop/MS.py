@@ -5,11 +5,6 @@ import yt_dlp as youtube_dl
 from datetime import datetime
 import shutil
 
-data_e_hora_atuais = datetime.now()
-data_e_hora_em_texto = data_e_hora_atuais.strftime("%d/%m/%Y")
-
-print(">\n")
-print(">>\n")
 print('Todos os links presentes no arquivo links.txt será\n baixado diretamente na pasta do script .py')
 print('Começando em ...')
 time.sleep(1)
@@ -50,7 +45,7 @@ def run():
         #shutil.move(f'{filename}', 'Musicas')
 
     print("\n\033[1;32m >>> Download complete... {}\033[m\n".format(filename))
-    
+
 if __name__=='__main__':
     print('\033[1;35m >>>>>> INICIADO <<<<<< \033')
     
