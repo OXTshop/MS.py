@@ -1,24 +1,32 @@
 import time
 import os
-import random
-import youtube_dl
+import  random
+import yt_dlp as youtube_dl
 from datetime import datetime
 import shutil
 
-data_e_hora_atuais = datetime.now()
-data_e_hora_em_texto = data_e_hora_atuais.strftime("%d/%m/%Y")
+print('Todos os links presentes no arquivo links.txt será\n baixado diretamente na pasta do script .py')
+print('Começando em ...')
+time.sleep(1)
+print('> 1')
+time.sleep(1)
+print('> > 2')
+time.sleep(1)
+print('> > > 3')
+time.sleep(1)
+print(' Goooo Goooo\n')
 
 f = open("links.txt", 'r')
 banda = f.readlines()
 ia = 0
 ib = 0
 
-'''if not os.path.exists('Musicas'):
-    os.makedirs('Musicas')'''
+"""if not os.path.exists('Musicas'):
+    os.makedirs('Musicas')
 
-'''for index in range(len(banda)):
-       banda[index] = banda[index].rstrip('\n')'''
-
+for index in range(len(banda)):
+       banda[index] = banda[index].rstrip('\n')
+"""
 numero = len(banda)
         
 def run():
@@ -37,9 +45,9 @@ def run():
         #shutil.move(f'{filename}', 'Musicas')
 
     print("\n\033[1;32m >>> Download complete... {}\033[m\n".format(filename))
-    
+
 if __name__=='__main__':
-    print('\033[1;35m>>>>>> INICIADO <<<<<<\033')
+    print('\033[1;35m >>>>>> INICIADO <<<<<< \033')
     
 for i in range(numero):
     time.sleep(1.5)
